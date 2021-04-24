@@ -16,6 +16,6 @@
     "url": "https://github.com/serhii-chechui"
   },
   "dependencies": {
-    "com.wtfgames.hephaestus.core": "0.0.1"
+    "com.wtfgames.hephaestus.core": ">=0.0.1"
   }
-}
+}       
