@@ -1,6 +1,6 @@
 {
   "name": "com.wtfgames.hephaestus.localdata",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "displayName": "Hephaestus Local Data",
   "description": "Hephaestus Local Data is a part of the Hephaestus Core framework that helps operate with local data.",
   "unity": "2019.2",
