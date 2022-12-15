@@ -9,6 +9,7 @@ public class HephaestusLocalDataManagerInstaller : MonoInstaller
             .Bind<ILocalDataManager>()
             .To<LocalDataManager>()
             .FromNewComponentOnNewGameObject()
-            .WithGameObjectName("LocalDataManager");
+            .WithGameObjectName("LocalDataManager")
+            .AsSingle();
     }
 }
