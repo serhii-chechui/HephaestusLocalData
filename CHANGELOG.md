@@ -5,6 +5,7 @@
 ### Changed
 
 - Made `LocalDataManager` non `MonoBehaviour`;
+- Modified package dependencies;
 
 ### Removed
 
