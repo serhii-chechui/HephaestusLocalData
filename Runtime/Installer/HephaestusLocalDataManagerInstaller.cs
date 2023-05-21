@@ -1,15 +1,10 @@
 using HephaestusMobile.LocalData;
 using Zenject;
 
-public class HephaestusLocalDataManagerInstaller : MonoInstaller
+public class HephaestusLocalDataManagerInstaller : Installer<HephaestusLocalDataManagerInstaller>
 {
     public override void InstallBindings()
     {
-        Container
-            .Bind<ILocalDataManager>()
-            .To<LocalDataManager>()
-            .FromNewComponentOnNewGameObject()
-            .WithGameObjectName("LocalDataManager")
-            .AsSingle();
+        Container.BindInterfacesTo<LocalDataManager>().AsSingle();
     }
 }

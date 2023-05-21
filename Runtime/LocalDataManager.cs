@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.IO;
 using UnityEngine;
+using Zenject;
 
 namespace HephaestusMobile.LocalData {
-    public class LocalDataManager : MonoBehaviour, ILocalDataManager {
+    public class LocalDataManager : ILocalDataManager, IInitializable {
+        
+        public void Initialize()
+        {
+            
+        }
 
         #region ILocalDataManager
 
@@ -104,6 +108,8 @@ namespace HephaestusMobile.LocalData {
         /// <param name="callback">Callback after data was saved.</param>
         public void SaveLocalDataBoolean(string dataKey, bool data, Action callback = null) {
             PlayerPrefs.SetInt(dataKey, data ? 1 : 0);
+            PlayerPrefs.Save();
+            callback?.Invoke();
         }
 
         #endregion
