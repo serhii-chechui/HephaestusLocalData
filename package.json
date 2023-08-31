@@ -1,6 +1,6 @@
 {
   "name": "com.wtfgames.hephaestus.localdata",
-  "version": "0.0.5",
+  "version": "1.0.1",
   "displayName": "Hephaestus Local Data",
   "description": "Hephaestus Local Data is a part of the Hephaestus Core framework that helps operate with local data.",
   "unity": "2019.2",
@@ -16,6 +16,10 @@
     "url": "https://github.com/serhii-chechui"
   },
   "dependencies": {
-    "com.wtfgames.hephaestus.core": ">=0.0.1"
+    "com.svermeulen.extenject": "^9.2.0-stcf3",
+    "com.wtfgames.hephaestus.core": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://18.195.169.73:4873/"
   }
 }
